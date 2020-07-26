@@ -1,0 +1,41 @@
+.header {
+    background: $off-black;
+    color: white;
+    margin-bottom: $m-size;
+    padding: $m-size 0;
+};
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__container--title {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__title {
+    font-size: $l-size;
+    margin: 0;
+};
+
+.header__subtitle {
+    font-size: $m-size;
+    color: $off-white;
+    font-weight: 500;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__login {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .header {
+        margin: 0 0 $xl-size;
+    }
+}
